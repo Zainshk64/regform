@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="blur">
+
+                <h1>Registration Form</h1>
+                <form action="#" id="form">
+
+                    <input type="text" name="Name" id="name" placeholder="Full Name">
+                    <span id="nameerror"></span>
+
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <span id="emailerror"></span>
+
+                    <input type="password" name="password" id="pass" placeholder="Password">
+                    <span id="passerror"></span>
+                    <small id="toggle">Show Password</small>
+
+                    
+                    <input type="tel" maxlength="11" name="phone" id="phone" placeholder="Phone Number">
+                    <span id="phonerror"></span>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <script src="scrip.js"></script>
+            <!-- <script>
+                let name = document.getElementById('name')
+                let email = document.getElementById('email')
+                let phone = document.getElementById('phone')
+                let pass = document.getElementById('pass')
+
+
+                let errorname = document.getElementById('nameerror')
+                let erroremail = document.getElementById('emailerror')
+                let phoneerror = document.getElementById('phoneerror')
+
+
+
+                function validate(){
+                    if(name.value == ""){
+                        errorname.innerHTML="Name is required!"
+                    }
+                    if(email.value == ""){
+                        erroremail.innerHTML="Email is required!"
+
+                    }
+                    if(phone.value == ""){
+                        phoneerror.innerHTML="Phone Number is required!"
+
+                    }
+                    return false;
+                }
+            </script> -->
+            
+        </div>
+    </div>
+</body>
+</html>

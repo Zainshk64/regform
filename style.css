@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}.main{
+    background: linear-gradient(to left top, green, rgb(206, 201, 201));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+
+
+}
+.blur{
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    /* margin-top: 1%; */
+    background: linear-gradient(to left top, rgb(206, 201, 201), green );
+
+
+
+}
+.container{
+    /* background-image: url(./IMG_0264.JPG); */
+    /* border-color: linear-gradient(to right, red, purple);   */
+    /* border: 1px solid linear-gradient(to right, red, purple);  */
+    height: auto ;
+    
+    width: 40%;
+    padding: 1%;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 2rcap;
+    
+    font-family: cursive;
+    text-shadow: -8px 8px 10px #aFaa;
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 0 0;
+
+}
+input{
+    margin: 5% 0;
+    border: none;
+    padding: 3%;
+
+
+}
+input:focus{
+    outline: none;
+}
+
+
+span{
+    margin-top: -5px;
+    padding: 0;
+    line-height: 0px;
+    color: cyan;
+    text-align: right;
+    font-size: 16px;
+}
+input[type=submit]{
+    border-radius: 50px;  
+    transition: all ease-in-out .3s;
+}
+input[type=submit]:hover{
+    color: #fff;
+    cursor: pointer;
+    background:  linear-gradient(to left top, rgba(255, 0, 0, 0.497), rgb(195, 195, 222));
+
+}
+small{
+    position: relative;
+    top: -14px;
+    cursor: pointer;
+    color: #fff
+
+
+}
+@media screen and (max-width:900px) {
+    .container{
+        padding: 0;
+        height: auto;
+        width: auto;
+    }
+    .main{
+        display: block;
+        padding: 30% 2%;
+    }
+    
+}
